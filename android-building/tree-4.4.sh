@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Source Devices Trees 4.4
-git clone https://github.com/nerdhannn/android_device_asus_sdm660-common -b xdOSS device/asus/sdm660-common
-git clone https://github.com/nerdhannn/android_device_asus_X01BD -b xdOSS device/asus/X01BD
-git clone https://github.com/nerdhannn/android_kernel_asus_sdm660 -b Eldritch kernel/asus/sdm660
-git clone https://github.com/nerdhannn/proprietary_vendor_asus -b xdOSS vendor/asus
+git clone https://github.com/nerdhannn/android_device_asus_sdm660-common -b twelve-eas-4.4 device/asus/sdm660-common
+git clone https://github.com/nerdhannn/android_device_asus_X01BD -b xdOSS-4.4 device/asus/X01BD # with adapt commit for xdOSS ROM
+git clone https://github.com/nerdhannn/android_kernel_asus_sdm660 -b twelve-eas-4.4 kernel/asus/sdm660
+git clone https://github.com/nerdhannn/proprietary_vendor_asus -b twelve-eas-4.4 vendor/asus
 
 # Remove Hals
 rm -rf hardware/qcom-caf/msm8998
